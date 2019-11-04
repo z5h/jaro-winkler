@@ -2,7 +2,7 @@ module JaroWinkler exposing (similarity)
 
 {-|
 
-    @docs similarity
+@docs similarity
 -}
 
 
