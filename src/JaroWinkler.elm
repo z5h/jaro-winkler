@@ -1,15 +1,8 @@
-module JaroWinkler exposing (score)
+module JaroWinkler exposing (similarity)
 
 {-|
 
-    Calculate the Jaro-Winkler similarity of two strings.
-    Returns a value between 1.0 and 0.0 where:
-    1.0 is returned for matching strings,
-    and 0.0 is returned for maximally disimilar strings.
-
-
-    Inspired by the post at: https://richardminerich.com/2011/09/record-linkage-algorithms-in-f-–-jaro-winkler-distance-part-2/
-
+    @docs similarity
 -}
 
 
@@ -28,9 +21,14 @@ commonPrefixLength xs ys counter =
 
 
 {-| Calculates the Jaro-Winkler similarity of two strings.
+
+    Returns a value between 1.0 and 0.0 where:
+    1.0 is returned for equal strings,
+    and 0.0 is returned for maximally disimilar strings.
+
 -}
-score : String -> String -> Float
-score s1 s2 =
+similarity : String -> String -> Float
+similarity s1 s2 =
     let
         chars1 =
             String.toList s1
