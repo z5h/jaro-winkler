@@ -3,7 +3,7 @@
     "name": "z5h/jaro-winkler",
     "summary": "Computes the Jaro–Winkler string similarity.",
     "license": "MIT",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "exposed-modules": [
         "JaroWinkler"
     ],

@@ -22,9 +22,9 @@ commonPrefixLength xs ys counter =
 
 {-| Calculates the Jaro-Winkler similarity of two strings.
 
-    Returns a value between 1.0 and 0.0 where:
-    1.0 is returned for equal strings,
-    and 0.0 is returned for maximally disimilar strings.
+Returns a value between 1.0 and 0.0 where:
+1.0 is returned for equal strings,
+and 0.0 is returned for maximally disimilar strings.
 
 -}
 similarity : String -> String -> Float
